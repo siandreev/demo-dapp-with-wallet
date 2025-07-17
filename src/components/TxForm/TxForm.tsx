@@ -78,6 +78,9 @@ const defaultTx: SendTransactionRequest = {
 export function TxForm() {
 	const [tx, setTx] = useState(defaultTx);
 	const wallet = useTonWallet();
+	useEffect(() => {
+		console.log('Wallet:', wallet)
+	}, [wallet]);
 	const [tonConnectUi] = useTonConnectUI();
 
 	const onChange = useCallback((value: object) => setTx((value as { updated_src: typeof defaultTx }).updated_src), []);
