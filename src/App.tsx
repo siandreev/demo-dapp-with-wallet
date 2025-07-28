@@ -18,7 +18,11 @@ function App() {
         <div className="app">
             <Header />
             <a href="https://app.tonkeeper.com/transfer/UQDNzlh0XSZdb5_Qrlx5QjyZHVAO74v5oMeVVrtF_5Vt1rIt">Test transfer link with address</a>
+            <br/>
             <a href="https://app.tonkeeper.com/transfer/EQD2NmD_lH5f5u1Kj3KfGyTvhZSX0Eg6qp2a5IQUKXxOG21n?jetton=EQCxE6mUtQJKFnGfaROTKOt1lZbDiiX1kCixRv7Nw2Id_sDs&amount=200000">Test full transfer link</a>
+            <br/>
+            <a href="ton://transfer/EQD2NmD_lH5f5u1Kj3KfGyTvhZSX0Eg6qp2a5IQUKXxOG21n?jetton=EQCxE6mUtQJKFnGfaROTKOt1lZbDiiX1kCixRv7Nw2Id_sDs&amount=200000">Test ton:// link</a>
+            <br/>
             <TxForm />
             {/*<TonProofDemo />*/}
             <Footer />
